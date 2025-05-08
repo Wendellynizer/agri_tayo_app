@@ -115,3 +115,26 @@ class _AppCheckbox extends State<AppCheckbox> {
     );
   }
 }
+
+// SEARCHBAR
+class AppSearchBar extends StatefulWidget {
+  const AppSearchBar({super.key});
+
+  @override
+  State<AppSearchBar> createState() => _AppSearchBar();
+}
+
+class _AppSearchBar extends State<AppSearchBar> {
+  @override
+  Widget build(BuildContext context) {
+    return SearchBar(
+      backgroundColor: WidgetStatePropertyAll(light),
+      elevation: const WidgetStatePropertyAll(0),
+      side: WidgetStatePropertyAll(BorderSide(color: primary, width: 2)),
+
+
+      leading: Icon(Icons.search_outlined, color: primary,),
+      hintText: 'Search',
+    );
+  }
+}

@@ -6,6 +6,8 @@ import "package:agri_tayo/utils/util.dart";
 import "package:agri_tayo/components/input.dart";
 import "../globals/styles.dart";
 
+double heightGap = 10;
+
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
 
@@ -79,42 +81,42 @@ class _SignupPageState extends State<SignupPage> {
                     child: Column(
                       children: [
                         Image.asset(Utils.getImage('agritayoph_logo.png'), width: 160,),
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppTextField(
                           icon: Icons.person_outline_rounded,
                           hintText: 'First Name',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppTextField(
                           icon: Icons.person_outline_rounded,
                           hintText: 'Last Name',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppTextField(
                           icon: Icons.mail_outline_rounded,
                           hintText: 'Email',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppPasswordField(
                           icon: Icons.lock_outline_rounded ,
                           hintText: 'Password',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppPasswordField(
                           icon: Icons.lock_outline_rounded ,
                           hintText: 'Confirm Password',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
 
                         // login button

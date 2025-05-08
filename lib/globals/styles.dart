@@ -4,6 +4,7 @@ import "package:flutter/material.dart";
 Color light = const Color(0xffffffff);
 Color primary = const Color(0xff386641);
 Color secondary = const Color(0xff6A994E);
+Color red = const Color(0xffFF7777);
 
 FontWeight semibold = FontWeight.w600;
 FontWeight bold = FontWeight.w700;

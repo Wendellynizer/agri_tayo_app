@@ -65,6 +65,9 @@ flutter:
      - lib/images/agritayoph_logo.png
      - lib/images/facebook_icon.png
      - lib/images/google_icon.png
+     - lib/images/avatar.jpg
+     - lib/images/default.jpg
+     - lib/images/test.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

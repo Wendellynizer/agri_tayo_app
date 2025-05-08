@@ -6,6 +6,8 @@ import "package:agri_tayo/utils/util.dart";
 import "package:agri_tayo/components/input.dart";
 import "../globals/styles.dart";
 
+double heightGap = 10;
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -31,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
           // green overlay for image bg
           Container(
             // color: Colors.green.withOpacity(0.8),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Color(0xee002006), Color(0xbb549962), Color(0xaa002006)],
                 begin: Alignment.bottomCenter,
@@ -85,16 +87,16 @@ class _LoginPageState extends State<LoginPage> {
                           hintText: 'Email',
                         ),
 
-                        const SizedBox(height: 20),
+                        SizedBox(height: heightGap),
 
                         const AppPasswordField(
                           icon: Icons.lock_outline_rounded ,
                           hintText: 'Password',
                         ),
 
-                        const SizedBox(height: 10,),
+                        SizedBox(height: heightGap),
                         AppCheckbox(),
-                        const SizedBox(height: 10),
+                        SizedBox(height: heightGap),
 
                         // login button
                         Flex(

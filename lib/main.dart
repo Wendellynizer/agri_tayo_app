@@ -1,3 +1,4 @@
+import 'package:agri_tayo/screens/home_page.dart';
 import 'package:agri_tayo/screens/signup_page.dart';
 import 'package:flutter/material.dart';
 
@@ -24,8 +25,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         textTheme: GoogleFonts.poppinsTextTheme(),
         useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xffEBF5ED),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xffEBF5ED)
+        )
       ),
-      home: const SignupPage(),
+      home: const HomePage(),
     );
   }
 }
